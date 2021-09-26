@@ -11,5 +11,5 @@ print(api.get(url,'jorgeferrerhernaez@gmail.com'))
 
 #comprobamos caso de ya registrado, resultado esperado: Error 401: {'success' : False}
 print(api.post(url,'Jorge','Ferrer','jorgeferrerhernaez@gmail.com','652144892'))
-#comprobamos caso no válido (email no registrado)
+#comprobamos caso no válido (email no registrado. Resultado esperado: Error 401: {'success' : False}
 print(api.get(url,'email2@gmail.com'))
